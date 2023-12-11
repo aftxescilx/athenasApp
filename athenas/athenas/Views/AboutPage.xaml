@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="athenas.Views.AboutPage"
+             xmlns:vm="clr-namespace:athenas.ViewModels" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             Title="{Binding Title}"
+             Shell.TabBarIsVisible="False">
+
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+
+        <ResourceDictionary>
+            <Color x:Key="Accent">#F50087</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout BackgroundColor="LightPink" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                    <Image Source="athenaslogo.png" HorizontalOptions="FillAndExpand"  VerticalOptions="Fill" HeightRequest="100" />
+                </ContentView>
+            </StackLayout>
+        </StackLayout>
+        <ScrollView Grid.Row="1">
+            <d:Label Text="BIENVENIDA"
+               FontSize="Large"
+               TextColor="Black"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+
+                <Button Margin="0,10,0,0"
+                    Text="Registrarse"
+                    Command="{Binding NavigateToRegisterPageCommand }"
+                    BackgroundColor="#F50087"  
+                                TextColor="White"
+                    CornerRadius="10"
+                />
+                <Button Margin="0,10,0,0"
+                    Text="Iniciar Sesión"
+                    Command="{Binding NavigateToLoginPageCommand}"
+                    BackgroundColor="LightPink"  
+                                TextColor="White"
+                    CornerRadius="10"
+                />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

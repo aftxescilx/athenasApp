@@ -1,0 +1,27 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="athenas.Views.SearchPage"
+             xmlns:vm="clr-namespace:athenas.ViewModels"
+             Title="{Binding Title}"
+             BackgroundColor="White">
+
+    <ContentPage.BindingContext>
+        <vm:SearchViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Grid>
+            <!-- Icono de la aplicación en la esquina superior izquierda -->
+            <Image Source="logo.png" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,10,0,0" HeightRequest="35" />
+
+            <!-- Barra de búsqueda en la parte superior -->
+            <Entry Placeholder="Buscar..." BackgroundColor="LightPink" HorizontalOptions="FillAndExpand" Margin="80,5,80,0" />
+
+            <!-- Icono de notificaciones en la esquina superior derecha -->
+            <Image Source="noti.png" HorizontalOptions="End" VerticalOptions="Start" Margin="0,15,20,0" HeightRequest="35"/>
+        </Grid>
+       
+       
+    </StackLayout>
+
+</ContentPage>

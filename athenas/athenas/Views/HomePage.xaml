@@ -1,0 +1,70 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="athenas.Views.HomePage"
+             xmlns:vm="clr-namespace:athenas.ViewModels"
+             Title="{Binding Title}"
+             BackgroundColor="White">
+
+    <ContentPage.BindingContext>
+        <vm:HomeViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Grid>
+            <!-- Icono de la aplicación en la esquina superior izquierda -->
+            <Image Source="logo.png" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,10,0,0" HeightRequest="35" />
+
+            <!-- Barra de búsqueda en la parte superior -->
+            <Entry Placeholder="Buscar..." BackgroundColor="LightPink" HorizontalOptions="FillAndExpand" Margin="80,5,80,0" />
+
+            <!-- Icono de notificaciones en la esquina superior derecha -->
+            <Image Source="noti.png" HorizontalOptions="End" VerticalOptions="Start" Margin="0,15,20,0" HeightRequest="35"/>
+        </Grid>
+        <!-- Sección de Recomendaciones -->
+        <Label Text="Recomendaciones" FontSize="Title" TextColor="Black" Margin="10,20,0,10" />
+        <ScrollView Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="book1.png" HeightRequest="150" />
+                <Image Source="book2.png" HeightRequest="150" />
+                <Image Source="book3.png" HeightRequest="150" />
+                <Image Source="book5.png" HeightRequest="150" />
+                <Image Source="book6.png" HeightRequest="150" />
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Sección de lo más popular -->
+        
+        <Label Text="Lo más popular" FontSize="Title" TextColor="Black" Margin="10,20,0,10" />
+        <ScrollView Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal">
+                <Frame BackgroundColor="#FF1493" CornerRadius="5" Padding="50" Margin="20,5,20,0">
+                    <Label Text="Te recomendamos la historia sensación" TextColor="White" />
+                </Frame>
+                <Frame BackgroundColor="#FF1493" CornerRadius="5" Padding="50" Margin="20,5,20,0">
+                    <Label Text="Te recomendamos la historia sensación" TextColor="White" />
+                </Frame>
+                <Frame BackgroundColor="#FF1493" CornerRadius="5" Padding="50" Margin="20,5,20,0">
+                    <Label Text="Te recomendamos la historia sensación" TextColor="White" />
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Sección de Autoras que sigues -->
+        <Label Text="Autoras que sigues" FontSize="Title" TextColor="Black" Margin="10,20,0,10" />
+        <ScrollView Orientation="Horizontal">
+
+            <StackLayout Orientation="Horizontal">
+                <!-- Imágenes de portadas de libros para la fila de Autoras que sigues -->
+                <Image Source="book7.png" HeightRequest="150" />
+                <Image Source="book8.png" HeightRequest="150" />
+                <Image Source="book10.png" HeightRequest="150" />
+                <Image Source="book11.png" HeightRequest="150" />
+                <Image Source="book12.png" HeightRequest="150" />
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Otros elementos de la página -->
+
+    </StackLayout>
+
+</ContentPage>

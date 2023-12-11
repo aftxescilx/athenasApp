@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "athenas.Android", "athenas\athenas.Android\athenas.Android.csproj", "{539DAFE4-A4FC-4C5B-A3A4-D45B74256D2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "athenas", "athenas\athenas\athenas.csproj", "{85389EA3-1065-4BBB-88CA-972214DFA63A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{539DAFE4-A4FC-4C5B-A3A4-D45B74256D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{539DAFE4-A4FC-4C5B-A3A4-D45B74256D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{539DAFE4-A4FC-4C5B-A3A4-D45B74256D2F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{539DAFE4-A4FC-4C5B-A3A4-D45B74256D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{539DAFE4-A4FC-4C5B-A3A4-D45B74256D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{539DAFE4-A4FC-4C5B-A3A4-D45B74256D2F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{85389EA3-1065-4BBB-88CA-972214DFA63A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85389EA3-1065-4BBB-88CA-972214DFA63A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85389EA3-1065-4BBB-88CA-972214DFA63A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{85389EA3-1065-4BBB-88CA-972214DFA63A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85389EA3-1065-4BBB-88CA-972214DFA63A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85389EA3-1065-4BBB-88CA-972214DFA63A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7FBC9782-4E70-40BC-A950-1F2E01A3A327}
+	EndGlobalSection
+EndGlobal
