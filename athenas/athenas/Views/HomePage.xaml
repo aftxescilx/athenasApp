@@ -11,16 +11,12 @@
 
     <StackLayout>
         <Grid>
-            <!-- Icono de la aplicación en la esquina superior izquierda -->
             <Image Source="logo.png" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,10,0,0" HeightRequest="35" />
 
-            <!-- Barra de búsqueda en la parte superior -->
             <Entry Placeholder="Buscar..." BackgroundColor="LightPink" HorizontalOptions="FillAndExpand" Margin="80,5,80,0" />
 
-            <!-- Icono de notificaciones en la esquina superior derecha -->
             <Image Source="noti.png" HorizontalOptions="End" VerticalOptions="Start" Margin="0,15,20,0" HeightRequest="35"/>
         </Grid>
-        <!-- Sección de Recomendaciones -->
         <Label Text="Recomendaciones" FontSize="Title" TextColor="Black" Margin="10,20,0,10" />
         <ScrollView Orientation="Horizontal">
             <StackLayout Orientation="Horizontal">
@@ -32,7 +28,6 @@
             </StackLayout>
         </ScrollView>
 
-        <!-- Sección de lo más popular -->
         
         <Label Text="Lo más popular" FontSize="Title" TextColor="Black" Margin="10,20,0,10" />
         <ScrollView Orientation="Horizontal">
@@ -49,12 +44,10 @@
             </StackLayout>
         </ScrollView>
 
-        <!-- Sección de Autoras que sigues -->
         <Label Text="Autoras que sigues" FontSize="Title" TextColor="Black" Margin="10,20,0,10" />
         <ScrollView Orientation="Horizontal">
 
             <StackLayout Orientation="Horizontal">
-                <!-- Imágenes de portadas de libros para la fila de Autoras que sigues -->
                 <Image Source="book7.png" HeightRequest="150" />
                 <Image Source="book8.png" HeightRequest="150" />
                 <Image Source="book10.png" HeightRequest="150" />
@@ -63,7 +56,6 @@
             </StackLayout>
         </ScrollView>
 
-        <!-- Otros elementos de la página -->
 
     </StackLayout>
 

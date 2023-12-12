@@ -40,7 +40,7 @@
     <TabBar>
         <ShellContent Title="Inicio" Icon="home.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
         <ShellContent Title="Explorar" Icon="search.png" Route="SearchPage" ContentTemplate="{DataTemplate local:SearchPage}" />
-
+        <ShellContent Title="Biblioteca" Icon="book.png" Route="LibraryPage" ContentTemplate="{DataTemplate local:LibraryPage}" />
     </TabBar>
 
 

@@ -1,0 +1,95 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="athenas.Views.LibraryPage"
+             xmlns:vm="clr-namespace:athenas.ViewModels"
+             Title="{Binding Title}"
+             BackgroundColor="White">
+
+    <ContentPage.BindingContext>
+        <vm:LibraryViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+
+        <Label Text="TODO" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" BackgroundColor="#F50087" TextColor="White"  />
+        <ScrollView Orientation="Horizontal">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Image 
+                    Source="book1.png" 
+                    HeightRequest="150"                 
+                    Grid.Row="0"
+                    Grid.Column="0" />
+                <Image 
+                    Source="book2.png" 
+                    HeightRequest="150"                 
+                    Grid.Row="0"
+                    Grid.Column="1" />
+                <Image 
+                    Source="book3.png" 
+                    HeightRequest="150"                 
+                    Grid.Row="0"
+                    Grid.Column="2" />
+                <Image 
+                    Source="book5.png" 
+                    HeightRequest="150"                 
+                    Grid.Row="1"
+                    Grid.Column="0" />
+                <Image 
+                    Source="book6.png" 
+                    HeightRequest="150"                 
+                    Grid.Row="1"
+                    Grid.Column="1" />
+                <Image 
+                    Source="book7.png" 
+                    HeightRequest="150"                 
+                    Grid.Row="1"
+                    Grid.Column="2" />
+                <Image 
+                    Source="book8.png" 
+                    HeightRequest="150"                 
+                    Grid.Row="2"
+                    Grid.Column="0" />
+                <Image 
+                    Source="book10.png" 
+                    HeightRequest="150"                 
+                    Grid.Row="2"
+                    Grid.Column="1" />
+                <Image 
+                    Source="book11.png" 
+                    HeightRequest="150"                 
+                    Grid.Row="2"
+                    Grid.Column="2" />
+                <Image 
+                    Source="book12.png" 
+                    HeightRequest="150"                 
+                    Grid.Row="3"
+                    Grid.Column="0" />
+                <Image 
+                    Source="book13.png" 
+                    HeightRequest="150"                 
+                    Grid.Row="3"
+                    Grid.Column="1" />
+  
+            </Grid>
+        </ScrollView>
+
+        <!-- Sección de lo más popular -->
+
+       
+
+        <!-- Otros elementos de la página -->
+
+    </StackLayout>
+
+</ContentPage>
