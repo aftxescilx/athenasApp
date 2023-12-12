@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("athenas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea7783bc537b9bca9ec678d81b8f6e87633fedd3")]
 [assembly: System.Reflection.AssemblyProductAttribute("athenas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("athenas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
