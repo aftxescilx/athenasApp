@@ -1,9 +1,9 @@
 ﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="athenas.Views.LibraryPage"
-             xmlns:vm="clr-namespace:athenas.ViewModels"
+             xmlns:vm="clr-namespace:athenas.ViewModels" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              Title="{Binding Title}"
-             BackgroundColor="White">
+             Shell.TabBarIsVisible="False">
 
     <ContentPage.BindingContext>
         <vm:LibraryViewModel />
@@ -29,7 +29,11 @@
                     Source="book1.png" 
                     HeightRequest="150"                 
                     Grid.Row="0"
-                    Grid.Column="0" />
+                    Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped" />
+                    </Image.GestureRecognizers>
+                </Image> 
                 <Image 
                     Source="book2.png" 
                     HeightRequest="150"                 

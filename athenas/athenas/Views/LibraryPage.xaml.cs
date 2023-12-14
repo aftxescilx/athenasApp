@@ -11,5 +11,11 @@ namespace athenas.Views
         {
             InitializeComponent();
         }
+
+        private async void OnImageTapped(object sender, EventArgs e)
+        {
+            // Aquí realizas la navegación a StoryPage.xaml
+            await Navigation.PushAsync(new StoryPage());
+        }
     }
 }

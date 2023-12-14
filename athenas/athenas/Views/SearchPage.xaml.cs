@@ -17,5 +17,6 @@ namespace athenas.Views
 		{
 			InitializeComponent ();
 		}
+
 	}
 }

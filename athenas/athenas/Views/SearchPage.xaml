@@ -103,7 +103,7 @@
                      Grid.Column="1" />
                 </Grid>
 
-                <Label Text="Etiqueras" FontSize="Title" TextColor="Black" Margin="10,20,0,10" />
+                <Label Text="Etiquetas" FontSize="Title" TextColor="Black" Margin="10,20,0,10" />
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
