@@ -12,7 +12,15 @@ namespace athenas.ViewModels
         public PerfilViewModel()
         {
             Title = "Perfil";
+            NavigateToDonacionPageCommand = new Command(OnNavigateToDonacionPage);
+
+        }
+        private async void OnNavigateToDonacionPage()
+        {
+            await Shell.Current.Navigation.PushAsync(new DonacionesPage());
         }
 
+        public ICommand NavigateToDonacionPageCommand { get; }
     }
+
 }

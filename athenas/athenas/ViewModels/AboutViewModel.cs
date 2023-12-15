@@ -16,7 +16,7 @@ namespace athenas.ViewModels
             NavigateToRegisterPageCommand = new Command(OnNavigateToRegisterPage);
         }
 
-        // En AboutPageViewModel.cs
+       
         private async void OnNavigateToLoginPage()
         {
             await Shell.Current.Navigation.PushAsync(new LoginPage());

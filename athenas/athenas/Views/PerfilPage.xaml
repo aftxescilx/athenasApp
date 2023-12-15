@@ -29,11 +29,7 @@
                         <StackLayout Margin="15,0,0,0">
                             <Label Text="Nombre de usuario" FontSize="Title" FontAttributes="Bold" />
                             <Label Text="@xxxxx" TextColor="Black" />
-                            <Image Source="configuracion.png" HeightRequest="30" WidthRequest="30" Aspect="AspectFit">
-                                <Image.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="OnImageTapped" />
-                                </Image.GestureRecognizers>
-                            </Image> 
+                            <ImageButton Source="configuracion.png" HeightRequest="30" WidthRequest="30" Aspect="AspectFit" Command="{Binding NavigateToDonacionPageCommand }"/>
 
                         </StackLayout>
                     </StackLayout>
@@ -98,16 +94,59 @@
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
+            
+                
             <StackLayout Margin="20">
                 <Label Text="Autoras favoritas" FontSize="Title" TextColor="Black" FontAttributes="Bold" />
                 <ScrollView Orientation="Horizontal">
-                    <StackLayout Orientation="Horizontal">
-                        <Image Source="book6.png" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
-                        <Image Source="book7.png" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
-                        <Image Source="book8.png" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
-                        <Image Source="book9.png" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
-                    </StackLayout>
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Spacing="5">
+                                <Image Source="icon1.jpg" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnAuthorTapped" />
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="1" Spacing="5">
+                                <Image Source="icon2.jpg" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="2" Spacing="5">
+                                <Image Source="icon3.jpg" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="2" Spacing="5">
+                                <Image Source="icon4.jpg" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Spacing="5">
+                                <Label Text="@xxxxx" TextColor="Purple" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="1" Spacing="5">
+                                <Label Text="@xxxxx" TextColor="Purple" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="2" Spacing="5">
+                                <Label Text="@xxxxx" TextColor="Purple" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"  Grid.Row="1" Grid.Column="2" Spacing="5">
+                                <Label HorizontalOptions="Center" Text="@xxxxx" TextColor="Purple" />
+                            </StackLayout>
+
+                        </Grid>
+
                 </ScrollView>
+
+
+
             </StackLayout>
         </StackLayout>
     </ScrollView>

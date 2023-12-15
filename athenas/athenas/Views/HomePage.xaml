@@ -48,10 +48,12 @@
         <ScrollView Orientation="Horizontal">
 
             <StackLayout Orientation="Horizontal">
-                <Image Source="icon1.png" HeightRequest="150" />
-                <Image Source="icon2.png" HeightRequest="150" />
-                <Image Source="icon3.png" HeightRequest="150" />
-                <Image Source="icon4.png" HeightRequest="150" />
+                <Image Source="book7.png" HeightRequest="150" />
+                <Image Source="book8.png" HeightRequest="150" />
+                <Image Source="book9.png" HeightRequest="150" />
+                <Image Source="book10.png" HeightRequest="150" />
+                <Image Source="book11.png" HeightRequest="150" />
+
             </StackLayout>
         </ScrollView>
 

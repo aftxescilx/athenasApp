@@ -19,7 +19,12 @@ namespace athenas.Views
         private async void OnImageTapped(object sender, EventArgs e)
         {
             // Aquí realizas la navegación a StoryPage.xaml
-            await Navigation.PushAsync(new StoryPage());
+            await Navigation.PushAsync(new DonacionesPage());
+        }
+
+        private async void OnAuthorTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PerfilAutoraPage());
         }
     }
 }

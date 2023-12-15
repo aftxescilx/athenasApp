@@ -25,3 +25,6 @@ C:\Users\hp\source\repos\athenas\athenas\athenas\bin\Debug\netstandard2.0\ref\at
 C:\Users\hp\source\repos\athenas\athenas\athenas\bin\Debug\netstandard2.0\athenas.pdb
 C:\Users\hp\source\repos\athenas\athenas\athenas\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\hp\source\repos\athenas\athenas\athenas\obj\Debug\netstandard2.0\Views\PerfilPage.xaml.g.cs
+C:\Users\hp\source\repos\athenas\athenas\athenas\obj\Debug\netstandard2.0\Views\PerfilAutoraPage.xaml.g.cs
+C:\Users\hp\source\repos\athenas\athenas\athenas\obj\Debug\netstandard2.0\Views\DonacionesPage.xaml.g.cs
+C:\Users\hp\source\repos\athenas\athenas\athenas\obj\Debug\netstandard2.0\Views\WritePage.xaml.g.cs

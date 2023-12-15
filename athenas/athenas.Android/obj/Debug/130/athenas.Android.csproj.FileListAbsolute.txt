@@ -665,3 +665,9 @@ C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawa
 C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\x.svg
 C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\configuracion.png
 C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\goodreads.png
+C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\icon4.jpg
+C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\icon1.jpg
+C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\icon2.jpg
+C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\icon3.jpg
+C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\donacion.png
+C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\header2.png
