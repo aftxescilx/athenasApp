@@ -1,0 +1,116 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="athenas.Views.PerfilPage"
+             xmlns:vm="clr-namespace:athenas.ViewModels" 
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:PerfilViewModel />
+    </ContentPage.BindingContext>
+    
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+
+                <!-- Header -->
+                <Image Source="header1.png" Aspect="AspectFill" Grid.Row="0" />
+
+                <!-- Profile Section -->
+                <Frame Grid.Row="0" BackgroundColor="#FFC9DA" Margin="20" CornerRadius="5">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="profile.jpg" HeightRequest="100" WidthRequest="100" Aspect="AspectFill" />
+                        <StackLayout Margin="15,0,0,0">
+                            <Label Text="Nombre de usuario" FontSize="Title" FontAttributes="Bold" />
+                            <Label Text="@xxxxx" TextColor="Black" />
+                            <Image Source="configuracion.png" HeightRequest="30" WidthRequest="30" Aspect="AspectFit">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnImageTapped" />
+                                </Image.GestureRecognizers>
+                            </Image> 
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame VerticalOptions="StartAndExpand" Grid.Row="1" BackgroundColor="LightGray" Margin="20" CornerRadius="5" WidthRequest="50" HeightRequest="70">
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Spacing="5">
+                            <Label Text="00" FontSize="Title" FontAttributes="Bold" TextColor="Purple" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="1" Spacing="5">
+                            <Label Text="745" FontSize="Title" FontAttributes="Bold" TextColor="Purple" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="2" Spacing="5">
+                            <Label Text="340" FontSize="Title" FontAttributes="Bold" TextColor="Purple" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Spacing="5">
+                            <Label Text="Historias" TextColor="Purple" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="1" Spacing="5">
+                            <Label Text="Seguidoras" TextColor="Purple" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="2" Spacing="5">
+                            <Label Text="Siguiendo" TextColor="Purple" />
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+
+                <Frame Grid.Row="2" Margin="5" BackgroundColor="#F50087" Padding="20" CornerRadius="5">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Breve descripción sobre la persona." />
+                        <Image Source="spotify.png" HeightRequest="30" WidthRequest="30" Aspect="AspectFit" />
+                        <Image Source="x.svg" HeightRequest="30" WidthRequest="30" Aspect="AspectFit" />
+                        <Image Source="goodreads.png" HeightRequest="30" WidthRequest="30" Aspect="AspectFit" />
+                    </StackLayout>
+                </Frame>
+
+               
+
+            </Grid>
+            <StackLayout Margin="20">
+                <Label Text="Historias favoritas" FontSize="Title" TextColor="Black" FontAttributes="Bold" />
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="book1.png" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
+                        <Image Source="book2.png" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
+                        <Image Source="book3.png" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
+                        <Image Source="book5.png" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            <StackLayout Margin="20">
+                <Label Text="Autoras favoritas" FontSize="Title" TextColor="Black" FontAttributes="Bold" />
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="book6.png" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
+                        <Image Source="book7.png" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
+                        <Image Source="book8.png" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
+                        <Image Source="book9.png" HeightRequest="150" WidthRequest="100" Margin="0,0,10,0" />
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

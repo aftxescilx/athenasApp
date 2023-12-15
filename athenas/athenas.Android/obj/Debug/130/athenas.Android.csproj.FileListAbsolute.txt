@@ -659,3 +659,9 @@ C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\stamp\_Co
 C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\profile.jpg
+C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\header1.png
+C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\spotify.png
+C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\x.svg
+C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\configuracion.png
+C:\Users\hp\source\repos\athenas\athenas\athenas.Android\obj\Debug\130\res\drawable\goodreads.png

@@ -24,3 +24,4 @@ C:\Users\hp\source\repos\athenas\athenas\athenas\bin\Debug\netstandard2.0\athena
 C:\Users\hp\source\repos\athenas\athenas\athenas\bin\Debug\netstandard2.0\ref\athenas.dll
 C:\Users\hp\source\repos\athenas\athenas\athenas\bin\Debug\netstandard2.0\athenas.pdb
 C:\Users\hp\source\repos\athenas\athenas\athenas\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\hp\source\repos\athenas\athenas\athenas\obj\Debug\netstandard2.0\Views\PerfilPage.xaml.g.cs
