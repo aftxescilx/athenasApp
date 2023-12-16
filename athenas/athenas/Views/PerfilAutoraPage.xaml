@@ -32,6 +32,7 @@
                             <Label Text="@xxxxx" TextColor="Black" />
                             <Image Source="donacion.png"  HeightRequest="30" WidthRequest="30" Aspect="AspectFit">
                             </Image>
+                            <Button Text="Siguiendo" BackgroundColor="Purple" WidthRequest="10" />
                         </StackLayout>
                     </StackLayout>
                 </Frame>

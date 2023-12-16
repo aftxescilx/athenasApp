@@ -3,14 +3,56 @@
              x:Class="athenas.Views.WritePage"
              xmlns:vm="clr-namespace:athenas.ViewModels" 
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             Shell.TabBarIsVisible="True">
 
     <ContentPage.BindingContext>
         <vm:WriteViewModel />
     </ContentPage.BindingContext>
+
+    <ScrollView>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+
+               
+
+                <Frame VerticalOptions="StartAndExpand" Grid.Row="1" BackgroundColor="LightGray" Margin="20" CornerRadius="5" WidthRequest="50" HeightRequest="70">
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Orientation="Horizontal" Grid.Column="0" Spacing="5">
+                            <Image Source="plus.png"  HeightRequest="30" WidthRequest="30" Aspect="AspectFit">
+                            </Image>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" Grid.Column="1" Spacing="5">
+                            <Label Text="Nueva historia" FontSize="Subtitle" FontAttributes="Bold" TextColor="Purple" />
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+
+                
+
+
+            </Grid>
         </StackLayout>
+    </ScrollView>
+
+
 </ContentPage>

@@ -3,7 +3,7 @@
              x:Class="athenas.Views.LibraryPage"
              xmlns:vm="clr-namespace:athenas.ViewModels" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              Title="{Binding Title}"
-             Shell.TabBarIsVisible="False">
+             >
 
     <ContentPage.BindingContext>
         <vm:LibraryViewModel />

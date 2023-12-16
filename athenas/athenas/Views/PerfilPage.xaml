@@ -29,7 +29,11 @@
                         <StackLayout Margin="15,0,0,0">
                             <Label Text="Nombre de usuario" FontSize="Title" FontAttributes="Bold" />
                             <Label Text="@xxxxx" TextColor="Black" />
-                            <ImageButton Source="configuracion.png" HeightRequest="30" WidthRequest="30" Aspect="AspectFit" Command="{Binding NavigateToDonacionPageCommand }"/>
+                            <Image Source="configuracion.png" HeightRequest="30" WidthRequest="30" Aspect="AspectFit">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnImageTapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
 
                         </StackLayout>
                     </StackLayout>
